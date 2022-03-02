@@ -1,0 +1,30 @@
+.section__toggleButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 50px;
+  padding: 5px;
+}
+
+.section__button {
+  border: none;
+  background-color: transparent;
+  text-shadow: 2px 2px 2px #eee;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+@media (max-width:414px) and (orientation:portrait) {
+  .section__toggleButtons {
+    margin: 10px;
+    flex-direction: column;
+  }
+}
+
+.section__button:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.section__button--hidden {
+  display: none;
+}
