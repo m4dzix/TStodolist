@@ -1,18 +1,11 @@
 .section {
-  background-color: hsl(34, 41%, 68%);
+  background-color: #cfb28c;
   border-radius: 7px;
   border: 3px solid black;
-  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, .4);
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.4);
   text-shadow: 1px 1px 2px #222;
-  margin: 20px
+  margin: 20px;
 }
-
-@media (max-width:414px) and (orientation:portrait) {
-  .section {
-    margin: 10px;
-  }
-}
-
 .section__header {
   text-transform: uppercase;
   font-weight: bold;
@@ -22,72 +15,67 @@
   padding: 20px;
   margin: 0 20px;
 }
-
 .section__taskList {
   padding: 5px;
 }
-
 .section__taskItem {
   display: flex;
   flex-direction: row;
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  text-transform: uppercase
+  text-transform: uppercase;
+}
+.section__taskItem--hidden {
+  display: none;
 }
 
+@media (max-width: 414px) and (orientation: portrait) {
+  .section {
+    margin: 10px;
+  }
+}
 .taskItem__button {
   border: none;
   width: 30px;
   height: 30px;
   margin: 10px;
   background-color: chartreuse;
-  box-shadow: .5px .5px 3px 3px black;
+  box-shadow: 0.5px 0.5px 3px 3px black;
 }
-
 .taskItem__button--doneTask {
   background-color: chartreuse;
   transition: 0.3s;
-  transition: 0.3s;
 }
-
+.taskItem__button--doneTask:hover {
+  background-color: #66cc00;
+}
+.taskItem__button--doneTask:active {
+  background-color: #4d9900;
+}
 .taskItem__button--removeTask {
   background-color: crimson;
+  transition: 0.3s;
 }
-
-.taskItem__button--doneTask:hover {
-  background-color: hsl(90, 100%, 40%);
-}
-
 .taskItem__button--removeTask:hover {
-  background-color: hsl(348, 83%, 37%);
+  background-color: #ad102f;
 }
-
-.taskItem__button--doneTask:active {
-  background-color: hsl(90, 100%, 30%);
-}
-
 .taskItem__button--removeTask:active {
-  background-color: hsl(348, 83%, 27%);
+  background-color: #7e0c23;
 }
 
 i {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-style: normal;
   font-size: 20px;
-}
-
-.section__taskItem--hidden {
-  display: none
 }
 
 .list__paragraph {
   padding: 5px 15px;
   text-align: center;
 }
-
 .list__paragraph--done {
   text-decoration: line-through;
 }

@@ -1,0 +1,77 @@
+.section 
+  background-color: hsl(34, 41%, 68%)
+  border-radius: 7px
+  border: 3px solid black
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, .4)
+  text-shadow: 1px 1px 2px #222
+  margin: 20px
+
+  &__header 
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 30px
+    text-shadow: 2px 2px 2px #eee
+    border-bottom: 2px solid black
+    padding: 20px
+    margin: 0 20px
+
+  &__taskList 
+    padding: 5px
+
+  &__taskItem 
+    display: flex
+    flex-direction: row
+    width: 100%
+    max-width: 80%
+    margin: 0 auto
+    justify-content: space-between
+    align-items: center
+    text-transform: uppercase
+    &--hidden 
+      display: none
+
+@media (max-width:414px) and (orientation:portrait) 
+  .section 
+    margin: 10px
+  
+.taskItem__button 
+  border: none
+  width: 30px
+  height: 30px
+  margin: 10px
+  background-color: chartreuse
+  box-shadow: .5px .5px 3px 3px black
+  
+  &--doneTask 
+    background-color: chartreuse
+    transition: 0.3s
+
+    &:hover 
+     background-color: hsl(90, 100%, 40%) 
+
+    &:active 
+     background-color: hsl(90, 100%, 30%)
+
+  &--removeTask 
+    background-color: crimson
+    transition: 0.3s
+
+    &:hover 
+      background-color: hsl(348, 83%, 37%)
+      
+    &:active 
+      background-color: hsl(348, 83%, 27%)
+  
+i 
+  font-family: 'FontAwesome'
+  font-style: normal
+  font-size: 20px
+
+.section__taskItem
+
+.list__paragraph 
+  padding: 5px 15px
+  text-align: center
+  
+  &--done 
+    text-decoration: line-through
