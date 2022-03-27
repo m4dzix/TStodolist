@@ -2,10 +2,10 @@
 
 ![ToDoList](https://github.com/m4dzix/toDoList/blob/master/images/toDoListSmall.png?raw=true)
 
-Simple and basic to-do list - helps organise tasks.
+Simple and basic to-do list - helps organise tasks. Created by using typescript technologies.
 Made during the frontend developer course from [“youcode.pl”](https://youcode.pl).
 
-**Live link:** [https://m4dzix.github.io/todo-list/](https://m4dzix.github.io/todo-list/)
+**Live link:** [https://m4dzix.github.io/TStodolist/](https://m4dzix.github.io/TStodolist/)
 
 ## How to use:
 
@@ -35,8 +35,8 @@ When you click again, all completed tasks will be displayed.
 ## Used technologies:
 
 - HTML
-- CSS
-- JavaScript(ES6)
+- SASS
+- TypeScript
 - BEM convention
 
 ## Author:
